@@ -1,8 +1,8 @@
 describe('Проверка покупки нового аватара', function () {                 
     it('e2e тест на покупку нового аватара для тренера', function () {   
          cy.visit('https://pokemonbattle.ru/');                         
-         cy.get('input[id="k_email"]').type('kondratkov.vv@yandex.ru');                 
-         cy.get('input[id="k_password"]').type('Vlad24128251');             
+         cy.get('input[id="k_email"]').type('USER_LOGIN');                 
+         cy.get('input[id="k_password"]').type('USER_PASSWORD');             
          cy.get('button[type="submit"]').click();                
          cy.wait(2000);
          cy.get('.header_card_trainer').click();           
